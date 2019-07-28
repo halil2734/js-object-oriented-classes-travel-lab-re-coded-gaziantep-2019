@@ -17,7 +17,20 @@ class Driver{
      this.endingLocation = endingLocation;
    }
    avenueToInteger(avenue){
-     return eastWest.indexOf()
+     return eastWest.indexOf(avenue);
+   }
+   blocksTravelled(){
+     let horizontalDistannce = this.avenueToInteger(this.endingLocation.horizontal)-this.avenueToInteger(this.beginningLocation.horizontal);
+     let verticalDistance = this.endingLocation.vertical - this.beginningLocation.vertical;
+     return Math.abs(horizontalDistannce) + Math.abs(verticalDistance);
+   }
+   estimatedTime(peak){
+     if (peak){
+       return this.blocksTravelled() / 2;
+     }
+     else {
+       return this.blocksTravelled() /3;
+     }
    }
 }
 
