@@ -16,7 +16,9 @@ class Driver{
      this.beginningLocation = beginningLocation;
      this.endingLocation = endingLocation;
    }
-   avenueToInteger()
+   avenueToInteger(avenue){
+     return eastWest.indexOf
+   }
 }
 
 /*const expect = chai.expect;
