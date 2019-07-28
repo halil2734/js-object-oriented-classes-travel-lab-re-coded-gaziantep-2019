@@ -17,7 +17,7 @@ class Driver{
      this.endingLocation = endingLocation;
    }
    avenueToInteger(avenue){
-     return eastWest.indexOf
+     return eastWest.indexOf()
    }
 }
 
